@@ -1,0 +1,19 @@
+{
+    "processors": ["stylelint-processor-styled-components"],
+    "extends": ["stylelint-config-prettier", "stylelint-config-styled-components"],
+    "plugins": ["stylelint-order"],
+    "rules": {
+        "annotation-no-unknown": "true",
+        "color-no-invalid-hex": true,
+        "color-no-invalid-hex-length": true,
+        "color-hex-case": "upper",
+        "custom-property-no-missing-var-function": true,
+        "no-duplicate-selectors": true,
+        "order/properties-alphabetical-order": true,
+        "number-leading-zero": "never",
+        "rule-empty-line-before": "always",
+        "string-quotes": "single",
+        "shorthand-property-no-redundant-values": true
+    }
+}
+

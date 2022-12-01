@@ -6,17 +6,48 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "husky-setup": "yarn husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\" && npx husky add .husky/commit-msg \"npx --no -- commitlint --edit ${1}\""
+  },
+  "lint-staged": {
+    "pages/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "styles/**/*.styled.ts": [
+      "stylelint"
+    ]
   },
   "dependencies": {
     "@types/node": "18.11.10",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
-    "eslint": "8.28.0",
-    "eslint-config-next": "13.0.5",
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "styled-components": "^5.3.6",
     "typescript": "4.9.3"
+  },
+  "peerDependencies": {
+    "react-is": "^18.2.0"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "devDependencies": {
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "eslint-config-prettier": "^8.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "prettier": "^2.8.0",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-order": "^5.0.0",
+    "stylelint-processor-styled-components": "^1.10.0"
   }
 }
