@@ -6,6 +6,15 @@ const nextConfig = {
     styledComponents: {
       displayName: true
     }
+  },
+  async redirects(){
+    return [
+      {
+        source: '/',
+        destination: '/weather',
+        permanent: true
+      }
+    ]
   }
 }
 
