@@ -2,7 +2,7 @@ import { useAppDispatch, useAppSelector } from '../reduxtk/app/hooks'
 //import { actions } from '../reduxtk/features/weather/weatherSlice'
 
 const Counter = () => {
-	const data = useAppSelector((state) => state.weather.data)
+	const data = useAppSelector((state) => state.weather)
 	//const dispatch = useAppDispatch()
 
 	const handleAction = () => {
