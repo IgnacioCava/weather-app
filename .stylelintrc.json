@@ -3,9 +3,6 @@
     "extends": ["stylelint-config-prettier", "stylelint-config-styled-components"],
     "plugins": ["stylelint-order"],
     "rules": {
-        "annotation-no-unknown": "true",
-        "color-no-invalid-hex": true,
-        "color-no-invalid-hex-length": true,
         "color-hex-case": "upper",
         "custom-property-no-missing-var-function": true,
         "no-duplicate-selectors": true,

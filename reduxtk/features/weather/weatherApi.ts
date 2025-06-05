@@ -21,5 +21,5 @@ export const {
     useSingleDateQuery, 
     useLazySingleDateQuery, 
     useDateRangeQuery, 
-    useLazyDateRangeQuery 
+    useLazyDateRangeQuery,
 } = weatherApi

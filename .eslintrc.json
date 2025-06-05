@@ -21,11 +21,11 @@
       "@typescript-eslint"
   ],
   "settings": {
-  "react": {
-    "version": "detect"
-  }
-},
-  "ignorePatterns": ["src/**/*.test.{ts,tsx}", "node_modules"],
+    "react": {
+      "version": "detect"
+    }
+  },
+  "ignorePatterns": ["src/**/*.test.{ts,tsx}", "node_modules", "next-env.d.ts"],
   "rules": {
       "react/react-in-jsx-scope": "off"
   }
